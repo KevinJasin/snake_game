@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+}
+
+#gameboard {
+    margin: auto auto;
+    border-collapse: collapse;
+}
+
+#gameboard td {
+    border: solid 1px gray;
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+}
+
+.snake {
+    background-color: blue;
+}
+
+
+#message {
+    height: 38px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: white;
+    padding: 4px 8px;
+}
+
