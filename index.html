@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Snake Game</title>
+    <title>Document</title>
 </head>
 <body>
     <div id="container">
         <div id="gameboard-container">
             <table id="gameboard"></table>
             <div id="message" class="centered hidden"></div>
-            <div id="score">Score: 0</div>
+            <button id="playAgainBtn" class="hidden" onclick="restartGame()">Play Again</button>
+
+        </div>
+        <div id="speed-container">
+            <label for="speed">Select Speed:</label>
+            <select id="speed">
+                <option value="200">Normal</option>
+                <option value="100">Fast</option>
+                <option value="300">Slow</option>
+            </select>
+        </div>
+        <div id="wall-toggle-container">
+            <button id="wallToggle">Toggle Wall Wrap</button>
         </div>
     </div>
     <script src="app.js"></script>
